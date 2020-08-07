@@ -52,7 +52,21 @@
         </script>
         <hr>
 
+        <!-- basic, empty canvas with linear gradient -->
+        <canvas id="myCanvasLinearGradient" width="200" height="100" style="border:1px solid #000000;">Your browser does not support the HTML canvas tag.</canvas>
+        <script>
+            drawLinearGradient();
+        </script>
+        <hr>
 
+        <!-- basic, empty canvas with image draw -->
+        <p>Image to use:</p>
+        <img id="scream" src="https://www.w3schools.com/html/img_the_scream.jpg" alt="The Scream" width="220" height="277">
+        
+        <p>Canvas to fill:</p>
+        <canvas id="myCanvasDrawImage" width="250" height="300" style="border:1px solid #d3d3d3;">Your browser does not support the HTML canvas tag.</canvas>
+        <p><button onclick="drawImage()">Draw The Scream</button></p>
+        <hr>
 
     </body>
 </html>

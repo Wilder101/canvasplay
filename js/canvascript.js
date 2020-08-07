@@ -35,3 +35,29 @@ function drawStrokeText() {
     ctx.font = "30px Arial";
     ctx.strokeText("Canvas Play!", 10, 50);
 }
+
+function drawLinearGradient() {
+
+    var c = document.getElementById("myCanvasLinearGradient");
+    var ctx = c.getContext("2d");
+    
+    // Create gradient
+    var grd = ctx.createLinearGradient(0, 0, 200, 0);
+    grd.addColorStop(0, "blue");
+    grd.addColorStop(1, "white");
+    
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10, 10, 175, 80);
+}
+
+function drawImage() {
+
+    // use: https://www.w3schools.com/html/img_the_scream.jpg
+
+    var c = document.getElementById("myCanvasDrawImage");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("scream");
+    // var img = src="https://www.w3schools.com/html/img_the_scream.jpg";
+    ctx.drawImage(img, 10, 10);
+}
