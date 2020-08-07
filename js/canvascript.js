@@ -75,5 +75,3 @@ window.onload = function drawImageAgain() {
 
     ctx.drawImage(imgPic, 10, 10);
 }
-
-// End of file
