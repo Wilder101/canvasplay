@@ -51,39 +51,29 @@ function drawLinearGradient() {
     ctx.fillRect(10, 10, 175, 80);
 }
 
+// Use a button to draw an image in a canvas element based on a presented html image
 function drawImage() {
-
-    // use: https://www.w3schools.com/html/img_the_scream.jpg
 
     var c = document.getElementById("myCanvasDrawImage");
     var ctx = c.getContext("2d");
     var img = document.getElementById("scream");
-    // var img = src="https://www.w3schools.com/html/img_the_scream.jpg";
     ctx.drawImage(img, 10, 10);
 }
 
-function drawImageAgain() {
-
-    // use: https://www.w3schools.com/html/img_the_scream.jpg
-
-    // var c = document.getElementById("myCanvasDrawImageAgain");
-    // var ctx = c.getContext("2d");
-    // // var img = document.getElementById("scream");
-    // var img = src="https://www.w3schools.com/html/img_the_scream.jpg";
-    // ctx.drawImage(img, 10, 10);
-
+// Draw an image upom DOM render in a canvas element based on an image file (local or hosted)
+window.onload = function drawImageAgain() {
+    
     var c = document.getElementById("myCanvasDrawImageAgain");
     var ctx = c.getContext("2d");
-    
+
     var imgPic = document.createElement("img");
-    // imgPic.src = "https://www.w3schools.com/html/img_the_scream.jpg";
-    imgPic.setAttribute("src", "https://www.w3schools.com/html/img_the_scream.jpg");
+    var anImage = "images/the_scream.jpg";
+    imgPic.setAttribute("src", anImage);
     imgPic.setAttribute("alt", "image");
     imgPic.height = 277;
     imgPic.width  = 220;
 
-
-
-
     ctx.drawImage(imgPic, 10, 10);
 }
+
+// End of file
