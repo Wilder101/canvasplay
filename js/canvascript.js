@@ -61,3 +61,29 @@ function drawImage() {
     // var img = src="https://www.w3schools.com/html/img_the_scream.jpg";
     ctx.drawImage(img, 10, 10);
 }
+
+function drawImageAgain() {
+
+    // use: https://www.w3schools.com/html/img_the_scream.jpg
+
+    // var c = document.getElementById("myCanvasDrawImageAgain");
+    // var ctx = c.getContext("2d");
+    // // var img = document.getElementById("scream");
+    // var img = src="https://www.w3schools.com/html/img_the_scream.jpg";
+    // ctx.drawImage(img, 10, 10);
+
+    var c = document.getElementById("myCanvasDrawImageAgain");
+    var ctx = c.getContext("2d");
+    
+    var imgPic = document.createElement("img");
+    // imgPic.src = "https://www.w3schools.com/html/img_the_scream.jpg";
+    imgPic.setAttribute("src", "https://www.w3schools.com/html/img_the_scream.jpg");
+    imgPic.setAttribute("alt", "image");
+    imgPic.height = 277;
+    imgPic.width  = 220;
+
+
+
+
+    ctx.drawImage(imgPic, 10, 10);
+}
