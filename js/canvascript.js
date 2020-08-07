@@ -18,6 +18,12 @@ function drawCircle () {
     ctx.beginPath();
     ctx.arc(95, 50, 40, 0, 2 * Math.PI);
     ctx.stroke();
-
 }
 
+function drawText() {
+
+    var c = document.getElementById("myCanvasText");
+    var ctx = c.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.fillText("Canvas Play!", 10, 50);
+}
