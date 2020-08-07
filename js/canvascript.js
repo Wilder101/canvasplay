@@ -27,3 +27,11 @@ function drawText() {
     ctx.font = "30px Arial";
     ctx.fillText("Canvas Play!", 10, 50);
 }
+
+function drawStrokeText() {
+
+    var c = document.getElementById("myCanvasStrokeText");
+    var ctx = c.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.strokeText("Canvas Play!", 10, 50);
+}
