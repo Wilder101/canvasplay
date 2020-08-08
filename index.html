@@ -24,70 +24,98 @@
         <!-- Bootstrap container -->
         <div class="container">
 
+            <!-- Jumbotron -->
+            <br>
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
                   <h1 class="display-4">Canvas Play!</h1>
                   <p class="lead">These are fun experiments with the HTML5 Canvas.</p>
                 </div>
             </div>
-
-            <!-- <h1>Canvas Play!</h1> -->
-            <hr>
-            <!-- <br> -->
-
-            <!-- basic, empty canvas-->
-            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">Your browser does not support the HTML canvas tag.</canvas>
             <hr>
 
-            <!-- basic, empty canvas with a diagonal line -->
-            <canvas id="myCanvasDiagonal" width="200" height="100" style="border:1px solid #000000;">Your browser does not support the HTML canvas tag.</canvas>
-            <script>
-                diagonalLine();
-            </script>
-            <hr>
+            <!-- Content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <!-- basic, empty canvas -->
+                        <p>Basic, empty canvas.</p>
+                        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">Your browser does not support the HTML canvas tag.</canvas>
+                    </div>
+                    <div class="col">
+                        <!-- basic, empty canvas with a diagonal line -->
+                        <p>Basic, empty canvas with a diagonal line.</p>
+                        <canvas id="myCanvasDiagonal" width="200" height="100" style="border:1px solid #000000;">Your browser does not support the HTML canvas tag.</canvas>
+                        <script>
+                            diagonalLine();
+                        </script>
+                    </div>
+                    <div class="col">
+                        <!-- basic, empty canvas with a circle -->
+                        <p>Basic, empty canvas with a circle.</p>
+                        <canvas id="myCanvasCircle" width="200" height="100" style="border:1px solid #000000;">Your browser does not support the HTML canvas tag.</canvas>
+                        <script>
+                            drawCircle();
+                        </script>
+                    </div>
+                </div>
 
-            <!-- basic, empty canvas with a circle -->
-            <canvas id="myCanvasCircle" width="200" height="100" style="border:1px solid #000000;">Your browser does not support the HTML canvas tag.</canvas>
-            <script>
-                drawCircle();
-            </script>
-            <hr>
+                <hr>
 
-            <!-- basic, empty canvas with text -->
-            <canvas id="myCanvasText" width="200" height="100" style="border:1px solid #000000;">Your browser does not support the HTML canvas tag.</canvas>
-            <script>
-                drawText();
-            </script>
-            <hr>
+                <div class="row">
+                    <div class="col">
+                        <!-- basic, empty canvas with text -->
+                        <p>Basic, empty canvas with text.</p>
+                        <canvas id="myCanvasText" width="200" height="100" style="border:1px solid #000000;">Your browser does not support the HTML canvas tag.</canvas>
+                        <script>
+                            drawText();
+                        </script>
+                    </div>
+                    <div class="col">
+                        <!-- basic, empty canvas with stroke text -->
+                        <p>Basic, empty canvas with stroke text.</p>
+                        <canvas id="myCanvasStrokeText" width="200" height="100" style="border:1px solid #000000;">Your browser does not support the HTML canvas tag.</canvas>
+                        <script>
+                            drawStrokeText();
+                        </script>
+                    </div>
+                    <div class="col">
+                        <!-- basic, empty canvas with linear gradient -->
+                        <p>Basic, empty canvas with linear gradient.</p>
+                        <canvas id="myCanvasLinearGradient" width="200" height="100" style="border:1px solid #000000;">Your browser does not support the HTML canvas tag.</canvas>
+                        <script>
+                            drawLinearGradient();
+                        </script>
+                    </div>
+                </div>
 
-            <!-- basic, empty canvas with stroke text -->
-            <canvas id="myCanvasStrokeText" width="200" height="100" style="border:1px solid #000000;">Your browser does not support the HTML canvas tag.</canvas>
-            <script>
-                drawStrokeText();
-            </script>
-            <hr>
+                <hr>
 
-            <!-- basic, empty canvas with linear gradient -->
-            <canvas id="myCanvasLinearGradient" width="200" height="100" style="border:1px solid #000000;">Your browser does not support the HTML canvas tag.</canvas>
-            <script>
-                drawLinearGradient();
-            </script>
-            <hr>
+                <div class="row">
+                    <div class="col">
+                        <!-- basic, empty canvas with image draw using button -->
+                        <p>Image to use:</p>
+                        <img id="scream" src="images/the_scream.jpg" alt="The Scream" width="220" height="277">
+                    </div>
+                    <div class="col">
+                        <!-- basic, empty canvas with image draw using button continued -->
+                        <p>Canvas to fill:</p>
+                        <canvas id="myCanvasDrawImage" width="240" height="297" style="border:1px solid #d3d3d3;">Your browser does not support the HTML canvas tag.</canvas>
+                        <p><button onclick="drawImage()">Draw The Scream</button></p>
+                    </div>
+                    <div class="col">
+                        <!-- basic, empty canvas with image draw upon DOM render from file -->
+                        <p>Canvas filled with image automatically.</p>
+                        <canvas id="myCanvasDrawImageAgain" width="240" height="297" style="border:1px solid #d3d3d3;">Your browser does not support the HTML canvas tag.</canvas>        
+                        <script>
+                            drawImageAgain();
+                        </script>
+                    </div>
+                </div>
+                <hr>
 
-            <!-- basic, empty canvas with image draw using button-->
-            <p>Image to use:</p>
-            <img id="scream" src="images/the_scream.jpg" alt="The Scream" width="220" height="277">
-            <p>Canvas to fill:</p>
-            <canvas id="myCanvasDrawImage" width="240" height="297" style="border:1px solid #d3d3d3;">Your browser does not support the HTML canvas tag.</canvas>
-            <p><button onclick="drawImage()">Draw The Scream</button></p>
-            <hr>
-
-            <!-- basic, empty canvas with image draw upon DOM render from file -->
-            <canvas id="myCanvasDrawImageAgain" width="240" height="297" style="border:1px solid #d3d3d3;">Your browser does not support the HTML canvas tag.</canvas>        
-            <script>
-                drawImageAgain();
-            </script>
-            <hr>
+            </div>
+            <br>
 
         <!-- End Bootstrap container -->
         </div>
